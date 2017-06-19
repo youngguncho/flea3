@@ -14,6 +14,7 @@
   <arg name="width" default="0"/>
   <arg name="height" default="0"/>
   <arg name="video_mode" default="23"/>
+  <arg name="format7_mode" default="0"/>
   <arg name="pixel_format" default="22"/>
   <arg name="exposure" default="true"/>
   <arg name="auto_exposure" default="true"/>
@@ -44,6 +45,7 @@
 
     <param name="fps" type="double" value="$(arg fps)"/>
     <param name="video_mode" type="int" value="$(arg video_mode)"/>
+    <param name="format7_mode" type="int" value="$(arg format7_mode)"/>
     <param name="pixel_format" type="int" value="$(arg pixel_format)"/>
     <param name="exposure" type="bool" value="$(arg exposure)"/>
     <param name="auto_exposure" type="bool" value="$(arg auto_exposure)"/>
