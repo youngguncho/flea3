@@ -1,0 +1,22 @@
+<launch>
+    <!-- Camera 1 -->
+    <include file="$(find flea3)/launch/single_node.launch">
+        <arg name="device" value="14425672"/>
+        <arg name="format7_mode" value="1"/>
+        <arg name="width" value="640"/>
+        <arg name="height" value="480"/>
+        <arg name="fps" value="40"/>
+        <arg name="white_balance" value="1"/>
+    </include>
+
+    <!-- Camera 2 -->
+    <include file="$(find flea3)/launch/single_node.launch">
+        <arg name="device" value="14425687"/>
+        <arg name="format7_mode" value="1"/>
+        <arg name="width" value="640"/>
+        <arg name="height" value="480"/>
+        <arg name="fps" value="40"/>
+        <arg name="white_balance" value="1"/>
+    </include>
+
+</launch>
