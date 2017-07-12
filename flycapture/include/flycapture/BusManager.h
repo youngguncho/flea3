@@ -1,22 +1,22 @@
 //=============================================================================
-// Copyright © 2017 FLIR Integrated Imaging Solutions, Inc. All Rights Reserved.
+// Copyright © 2008 Point Grey Research, Inc. All Rights Reserved.
 //
-// This software is the confidential and proprietary information of FLIR
-// Integrated Imaging Solutions, Inc. ("Confidential Information"). You
-// shall not disclose such Confidential Information and shall use it only in
+// This software is the confidential and proprietary information of Point
+// Grey Research, Inc. ("Confidential Information").  You shall not
+// disclose such Confidential Information and shall use it only in
 // accordance with the terms of the license agreement you entered into
-// with FLIR Integrated Imaging Solutions, Inc. (FLIR).
+// with Point Grey Research, Inc. (PGR).
 //
-// FLIR MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE
+// PGR MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF THE
 // SOFTWARE, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
 // IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-// PURPOSE, OR NON-INFRINGEMENT. FLIR SHALL NOT BE LIABLE FOR ANY DAMAGES
+// PURPOSE, OR NON-INFRINGEMENT. PGR SHALL NOT BE LIABLE FOR ANY DAMAGES
 // SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
 // THIS SOFTWARE OR ITS DERIVATIVES.
 //=============================================================================
 
 //=============================================================================
-// $Id: BusManager.h 317385 2017-02-28 18:28:29Z corinal $
+// $Id: BusManager.h 244578 2015-08-21 23:30:57Z matthewg $
 //=============================================================================
 
 #ifndef PGR_FC2_BUSMANAGER_H
@@ -299,8 +299,8 @@ namespace FlyCapture2
 			/**
 			 * Force the camera with the specific MAC address to the specified
 			 * IP address, subnet mask and default gateway. This is useful in
-			 * situations where GigE Vision cameras are using IP addresses 
-			 * in a subnet different from the host's subnet.
+			 * situations where a GigE Vision camera is using Persistent IP and the
+			 * application's subnet is different from the device subnet.
 			 *
 			 * @param macAddress MAC address of the camera.
 			 * @param ipAddress IP address to set on the camera.
@@ -318,8 +318,9 @@ namespace FlyCapture2
 			/**
 			 * Force all cameras on the network to be assigned sequential IP addresses
 			 * on the same subnet as the netowrk adapters that they are connected to.
-			 * This is useful in situations where GigE Vision cameras are using
-			 * IP addresses in a subnet different from the host's subnet.
+			 * This is useful in situations where a GigE Vision cameras are using
+			 * Persistent IP addresses and the application's subnet is different from
+			 * the devices.
 			 *
 			 * @return An Error indicating the success or failure of the function.
 			 */
